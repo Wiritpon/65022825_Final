@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style> {
+          box-sizing: content-box;  
+          width: 300px;
+          height: 100px;
+          padding: 30px;  
+          border: 10px solid blue;
+        }
+          box-sizing: border-box;{
+          width: 300px;
+          height: 100px;
+          padding: 30px;  
+          border: 10px solid blue;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Insert data</h1>
+    <div>
+    <p>ชื่อ</p>
+    <input id="name" type="text" onfocus="Focus_Name(this)"  onblur="Blur_Name(this)" onchange="Add()">
+    </div>
+    <div>
+        <p>นามสกุล</p>
+        <input id="surname" type="text" onfocus="Focus_Surname(this)"  onblur="Blur_Surname(this)" onchange="Add()">
+    </div>
+    <p>เพศ</p>
+    <select name="gender" id="gender">
+        <option value="ชาย">ชาย</option>
+        <option value="หญิง">หญิง</option>
+        <option value="ไม่ระบุ">ไม่ระบุ</option>
+      </select>
+</div>
+    <div style="display: inline;">
+        <p id="date">วันเกิด</p>
+        <input id="datee" type="date" style="margin-top: 0%;" onchange="Add()">
+</div>  
+</div>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Add</button>
+    <script src="script.js" ></script>
+
+</body>
+</html>
